@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #222;}
+
+header {width: 200px; height: 650px; float: left;}
+section {float: right; width: calc(100% - 200px); height: 650px; }
+footer {width: 100%; height: 100px; float: left; background: #0b212e;}
+
+
+/* header */
+header h1 {width: 200px; height: 130px;  margin-bottom: 30px;}
+
+header .gnb {width: 180px; margin: 0 auto; background: #183c5c;}
+header .gnb li {width: 100%; line-height: 60px; text-align: center; font-size: 24px; border-bottom: 1px solid #fff;}
+
+header .gnb li a {color: #fff;  display: block;}
+
+header .gnb li .lnb {background: #1e5d94; overflow: hidden; transition: 0.3s; max-height: 0;}
+
+header .gnb li:hover {background: #082036;}
+
+header .gnb li:hover .lnb {max-height: 240px;}
+
+header .gnb li .lnb li {font-size: 20px; border-bottom: 0;}
+
+
+/* section */
+section .top {width: 100%; height: 400px; background: #ccc;}
+section .content {width: 100%; height: 250px;}
+
+section .slide {width: calc(100% - 230px); height: 400px; float: left; position: relative; overflow: hidden;}
+section .slide ul {position: absolute; width: 300%; height: 400px; background: rgb(89, 2, 2); }
+section .slide ul li {float: left; width: calc(100% / 3);}
+section .slide ul li img {width: 100%;}
+
+
+section .banner {width: 230px; height: 400px; background: #d65145; float: right;text-align: center; }
+
+.banner .icon {width: 75px; margin: 20px 0;}
+.banner h2 {color: #fff; font-size: 24px; margin-bottom: 20px;}
+.banner div {color: #fff; font-size: 18px; margin-bottom: 20px;}
+.banner .arrow {width: 165px; height: 70px; background: #a94036; margin: 0 auto; display: block;}
+.banner .arrow img {margin-top: 10px;}
+
+
+
+
+
+section .content .notice {width: 50%; height: 250px; float: left;}
+.notice h2 {height: 40px; font-size: 20px; line-height: 40px;}
+.notice ul {width: 100%; height: 200px; }
+.notice ul li {height: 50px; line-height: 50px; width: 100%; border-bottom: 1px solid #ddd;}
+.notice ul li .title {float: left; width: 80%;}
+.notice ul li .date {float: right; width: 20%;}
+
+section .content .gallery {width: 50%; height: 250px; float: left;}
+.gallery h2 {height: 40px; font-size: 20px; line-height: 40px;}
+.gallery ul {width: 100%; height: 200px; }
+.gallery ul li {width: 200px; height: 130px; background: #000; float: left; margin-right: 30px; text-align: center;}
+.gallery ul li img {width: 100%;}
+
+/* footer */
+footer h1 {width: 200px; height: 100px; float: left; margin-right: 100px;}
+footer .address {width: 50%; height: 50px; float: left; margin-top: 25px; color: #fff;}
+footer .family {width: 200px; height: 50px; float: right; background: #000; margin-top: 25px;}
+footer .family select {width: 150px; height: 50px; }
+
+.modal {position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: none;}
+.popup {position: absolute; width: 400px; height: 300px; background: #1e5d94; left: 50%; top: 50%; margin-left: -200px; margin-top: -150px; padding: 20px;}
+.popup h2 {color: #fff; font-size: 24px; margin-bottom: 20px;}
+.popup div {color: #fff; font-size: 20px;}
+.popup a {position: absolute; right: 20px; bottom: 20px; background: #000; color: #fff; padding: 20px 40px;}
